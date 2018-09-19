@@ -16,4 +16,11 @@ public class ExitCommand extends Command {
         return new CommandResult(MESSAGE_EXIT_ACKNOWEDGEMENT);
     }
 
+    /**
+     * Returns true if the Command mutates the data
+     */
+    @Override
+    public boolean isMutating(){
+        return false;
+    }
 }
