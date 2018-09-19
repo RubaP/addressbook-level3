@@ -39,4 +39,11 @@ public class DeleteCommand extends Command {
         }
     }
 
+    /**
+     * Returns true if the Command mutates the data
+     */
+    @Override
+    public boolean isMutating(){
+        return true;
+    }
 }
